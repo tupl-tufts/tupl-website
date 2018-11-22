@@ -1,0 +1,245 @@
+
+/* Put website / document-wide properties here: */
+body {
+  margin: 0;
+  padding-top: 0px;
+  font-size: 20px;
+  font-family: 'Futura', sans-serif;
+  color: white;
+}
+
+/* "Credits" at the bottom of the page */
+#bottom {
+  background-color: #734021; /* Tufts brown */
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  opacity: 1.0;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#logo {
+  text-align: right;
+  float: right;
+  width: 29%;
+
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+ /* Website header obscurs the place we want to jump to when using HTML anchors,
+  * so we need to offset the tagged ids (on e.g. <h1> headings mostly) by a fixed
+  * size offset to get the right thing to appear when we click a link.
+  */
+.anchor {
+  display: block;
+  position: relative;
+  
+  /* Offset of 100 determined by trial-and-error: */
+  top: -100px;
+  visibility: hidden;
+}
+
+#navbar-links {
+  width: 69%;
+  float: left;
+}
+
+#navbar a {
+  color: inherit;        /* don't color links differently */
+  text-decoration: none; /* no underlining */
+  
+  float: left;
+  padding: 14px;
+  
+  font-size: 25px;
+  font-weight: bold;
+} 
+
+/* sticky gets triggered (added to navbar) when user scrolls the page */
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: rgba(62, 142, 222, 1.0); /* #3E8EDE is Tufts blue */
+  border-radius: 5px; /* Soft edges on the navbar div */
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.content {
+  color: black;
+  padding-top: 40px;
+}
+
+/* The outer-most container for the website, force the page
+   to be within a certain width to constrain the content: */
+.container {
+  max-width: 1000px;
+
+  /* Center the div with margins on both
+     sides filling up the remaining max-width */
+  margin: auto;
+}
+
+.contact-entry {
+  float: left; /* Multiple per row */
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  /* 4 contact entries per line: */
+  width: 23%;
+  margin: 10px;
+}
+
+.contact-row {
+
+}
+
+.job-title {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #D35E13;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Make links in contact job titles (e.g. mailing list) smaller */
+.job-title a {
+  color: inherit;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.contact-names {
+  background-color: #C05008;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.contact-name {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.contact-name a {
+  color: inherit;
+}
+
+/* All images in the people-content class */
+.people-content img {
+  width: 250px;
+  height: 250px;
+}
+
+.person-photo:hover .image-link {
+  opacity: 0.7;
+}
+
+.people-content a {
+  color: inherit;
+  font-size: 20px;
+}
+
+.faculty {
+
+}
+
+/* Rows of floating people in table (row/column) form: */
+.person-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.contact-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.grad-student-entry {
+  background-color: #A93439;
+  border-radius: 40px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+
+  /* 3 grad students per line */
+  width: 28%;
+  text-align: center;
+  float: left;
+}
+
+.undergrad-student-entry {
+  background-color: #4A0D66;
+  border-radius: 40px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+
+  /* 3 grad students per line */
+  width: 28%;
+  text-align: center;
+  float: left;
+}
+
+.faculty-entry {
+  background-color: #77881C;
+  border-radius: 40px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+
+  /* 2 faculty per line */
+  width: 45%;
+  text-align: center;
+
+  /* Multiple faculty (2) per line */
+  float: left;
+}
+
+.person-bio {
+  /* Put some space between the obligatory contact info and
+   * the person's actual research interests */
+  padding-top: 30px;
+  padding-left: 10px;  /* not hit edges */
+  padding-right: 10px; /* not hit edges */
+  text-align: left;
+}
+
+.person-photo {
+  margin: 20px;
+  width: 250px; /* same as image width */
+  border-radius: 179px;
+  border: 10px solid white;
+
+  /* Fit the image within the border-radius: */
+  overflow: hidden;
+
+  /* center the image in the entry div */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* So that hovering opacity looks better: */
+  background-color: white;
+}
+
+
