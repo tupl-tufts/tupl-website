@@ -16,6 +16,12 @@ body {
   padding-left: 5px;
   border-radius: 5px;
   text-align: center;
+  color: white;
+}
+
+#bottom a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #navbar {
@@ -28,14 +34,28 @@ body {
 #logo {
   text-align: right;
   float: right;
-  width: 29%;
+  width: 7%;
 
   display: block;
   padding-top: 14px;
   padding-bottom: 14px;
 
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
+}
+
+.social-media-content {
+  width: 60%;
+  float: left;
+  display: block;
+  padding: 10px;
+}
+
+.tuftscs-fb-page {
+  width: 40%;
+  float: right;
+  display: block;
+  padding: 10px;
 }
 
  /* Website header obscurs the place we want to jump to when using HTML anchors,
@@ -52,8 +72,13 @@ body {
 }
 
 #navbar-links {
-  width: 69%;
+  width: 93%;
   float: left;
+  text-shadow: 0px 0px 1px black;
+}
+
+#navbar a:hover {
+  text-shadow: 3px 3px 3px black;
 }
 
 #navbar a {
@@ -194,7 +219,7 @@ body {
   font-size: 20px;
   /* 4 contact entries per line: */
   width: 23%;
-  margin: 10px;
+  margin: 5px;
 }
 
 .entry {

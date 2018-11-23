@@ -5,17 +5,29 @@
   <title>TuPL - Tufts Programming Languages</title>
 </head>
 <body>
+
+<!-- Like button for tupl.cs.tufts.edu -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="container">
 
 <div id="navbar" class="sticky">
   <div id="navbar-links">
-    <a href="#tupl">( TuPL,</a>
-    <a href="#people">People,</a>
-    <a href="#papers">Publications,</a>
-    <a href="#projects">Projects,</a>
-    <a href="#contact">Contact )</a>
+      <a href="#tupl">( TuPL,</a>
+      <a href="#people">People,</a>
+      <a href="#papers">Publications,</a>
+      <a href="#projects">Projects,</a>
+      <a href="#join-us">Join Us,</a>
+      <a href="#contact">Contact )</a>
   </div> <!-- id=navbar -->
-  
+    
   <div id="logo">
     TuPL<span style="padding-right: 14px"></span>
   </div>
@@ -99,6 +111,7 @@ to the elements of our TuPL in the Fall of 2018.
   <div class="grad-students">
     <!-- Add new grad students at the *bottom* of this div. Delete graduated students
          and move them to the alumni div -->
+    <span id="current-graduate-students" class="anchor"></span>
     <h2 style="text-align: center">Current Graduate Students</h2>  
    
     <div class="person-row"> 
@@ -183,14 +196,14 @@ to the elements of our TuPL in the Fall of 2018.
     <div class="person-row">
       
       <div class="grad-student-entry large-entry entry">
-        <span id="jchand03" class="anchor"></span>
+        <span id="chandler" class="anchor"></span>
         <div class="person-photo">
-          <a href="https://www.cs.tufts.edu/~jchand03">
-            <img class="image-link" src="/images/jchand03.jpg" alt="jchand03.jpg"></a></div>
+          <a href="https://www.cs.tufts.edu/~chandler">
+            <img class="image-link" src="/images/chandler.jpg" alt="chandler.jpg"></a></div>
         <div class="person-name">Jared Chandler</div>
-        <div class="person-email"><a href="mailto:jchand03@cs.tufts.edu">jchand03@cs.tufts.edu</a></div>
+        <div class="person-email"><a href="mailto:chandler@cs.tufts.edu">chandler@cs.tufts.edu</a></div>
         <div class="person-position">Advisor:</div>
-        <div class="person-link"><a href="https://www.cs.tufts.edu/~jchand03">cs.tufts.edu/~jchand03/</a></div>
+        <div class="person-link"><a href="https://www.cs.tufts.edu/~chandler">cs.tufts.edu/~chandler/</a></div>
         <div class="person-bio">Works on [research].</div>
       </div>
 
@@ -241,6 +254,7 @@ to the elements of our TuPL in the Fall of 2018.
   <div class="undergrad-students">
     <!-- Add undergrad students at the *bottom* of this div. Delete graduated students
          and move them to the alumni div -->
+    <span id="current-undergraduate-students" class="anchor"></span>
     <h2 style="text-align: center">Current Undergraduate Students</h2>  
       
     <div class="person-row">
@@ -277,8 +291,8 @@ to the elements of our TuPL in the Fall of 2018.
     <h2 style="text-align: center">Alumni &amp; Former Members</h2>
 
     <div class="person-row">
-      <span id="rveroy" class="anchor"></span>
       <div class="alumni-entry small-entry entry">
+        <span id="rveroy" class="anchor"></span>
         <div class="person-photo">
           <a href="https://www.eecs.tufts.edu/~rveroy/">
             <img class="image-link" src="/images/rveroy.jpg" alt="rveroy.jpg"></a></div>
@@ -286,9 +300,8 @@ to the elements of our TuPL in the Fall of 2018.
         <div class="person-position"></div>
       </div>
 
-    <div class="person-row">
-      <span id="mshah" class="anchor"></span>
       <div class="alumni-entry small-entry entry">
+        <span id="mshah" class="anchor"></span>
         <div class="person-photo">
           <a href="http://www.mshah.io/">
             <img class="image-link" src="/images/mshah08.jpg" alt="mshah08.jpg"></a></div>
@@ -296,9 +309,8 @@ to the elements of our TuPL in the Fall of 2018.
         <div class="person-position">PhD, <a href="https://www.ccis.northeastern.edu/people/michael-shah/">CCIS NEU</a></div>
       </div>
 
-    <div class="person-row">
-      <span id="eaftan" class="anchor"></span>
       <div class="alumni-entry small-entry entry">
+        <span id="eaftan" class="anchor"></span>
         <div class="person-photo">
           <a href="https://ai.google/research/people/EdwardAftandilian">
             <img class="image-link" src="/images/eaftan.jpg" alt="eaftan.jpg"></a></div>
@@ -314,7 +326,9 @@ to the elements of our TuPL in the Fall of 2018.
         <div class="person-name">Nathan P. Ricci</div>
         <div class="person-position">PhD, Microsoft</div>
       </div>
-      
+    </div> <!-- class="person-row" -->
+     
+    <div class="person-row"> 
       <div class="alumni-entry small-entry entry">
         <span id="ywang30" class="anchor"></span>
         <div class="person-photo">
@@ -350,7 +364,9 @@ to the elements of our TuPL in the Fall of 2018.
         <div class="person-name">Robert Dockins</div>
         <div class="person-position">MS, <a href="http://galois.com/">Galois</a></div>
       </div>
+    </div> <!-- class="person-row" -->
 
+    <div class="person-row">
       <div class="alumni-entry small-entry entry">
         <span id="adam-lewis" class="anchor"></span>
         <div class="person-photo">
@@ -386,7 +402,9 @@ to the elements of our TuPL in the Fall of 2018.
         <div class="person-name">Ben Schwalb</div>
         <div class="person-position">UG</div>
       </div>
+    </div> <!-- class="person-row" -->
 
+    <div class="person-row">
       <div class="alumni-entry small-entry entry">
         <span id="sara-su" class="anchor"></span>
         <div class="person-photo">
@@ -395,7 +413,6 @@ to the elements of our TuPL in the Fall of 2018.
         <div class="person-name">Sara L. Su</div>
         <div class="person-position">Asst Prof, Google</div>
       </div>
-
     </div> <!-- class="person-row" -->
 </div>
 
@@ -540,13 +557,98 @@ to the elements of our TuPL in the Fall of 2018.
   </div> <!-- class="projects-row" -->
 
 </div> <!-- class="projects-content" -->
+    
+<h1><span id="join-us" class="anchor"></span>Join Us - new member orientation</h1>
+
+<p>
+What follows is a guide for new TuPL members to follow upon arrival to Tufts.
+This is written <b>by grad students</b>, and <i>primarily for grad students</i>.
+If you're not a new graduate student much of this information may still be pertinent
+to you, but you should get in touch with your primary TuPL contact to figure out
+which pieces are pertinent.
+</p>
+
+<h4>Linux home directory</h4>
+<p>
+Once you arrive on campus the first thing you should do is head to the
+<a href="http://systems.eecs.tufts.edu/">EECS systems staff</a> in
+Halligan Hall room 231, located at the far end of the hall visible while
+standing in the second floor kitchen.
+They are available Monday through Friday, 8am to 5:30pm and will help you get
+setup with a username and password for the EECS network of linux servers, lab
+computers, and your home directory.
+</p>
+
+<p>
+If you ever forget your EECS password but know your Tufts email / UTLN password,
+you can recover access to your EECS account by going here: <a href="https://www.eecs.tufts.edu/~accounts/reset.cgi">
+https://www.eecs.tufts.edu/~accounts/reset.cgi</a>.
+
+<h4>Github</h4>
+
+<p>
+Once you have an EECS account, you can use that to login to
+<a href="https://github.cs.tufts.edu">https://github.cs.tufts.edu</a>. You must login
+to Github first before we can add you to the
+<a href="https://github.cs.tufts.edu/Siriusly">Siriusly github organization</a>.
+To do so, contact our <a href="#github-organizer">Private Github</a> organizer and
+request to be added to the Siriusly github organization.
+<p>
+
+<p>
+Once you have been granted access to Siriusly on Github, please go
+to <a href="https://github.cs.tufts.edu/Siriusly/tupl-website">
+https://github.cs.tufts.edu/Siriusly/tupl-website</a> and make a
+<a href="https://github.cs.tufts.edu/Siriusly/tupl-website/pulls">pull request</a>
+with your contact information added to the bottom of the
+<a href="#current-graduate-students">Current Graduate Students HTML-div</a> of
+this document. The same applies for <a href="#current-undergraduate-students">new
+undergraduate students</a> working on a project with any current TuPL member.
+</p>
+
+<p>
+If <a href="sguyer">Sam Guyer</a> is your advisor, you will want to ask him to
+have you added to the <a href="https://github.com/RedlineResearch">Redline Research</a>
+organization on public github.
+</p>
+
+<h4>CSLOL</h4>
+
+<p>
+Although not specific to TuPL, the
+<a href="https://sites.tufts.edu/cslol/">Computer Science League of Learning (CSLOL)</a>
+is the de facto graduate student organization for computer science graduate students
+at Tufts. To learn more about access to housing in the
+Medford/Somerville area, which classes to take, and all other non-research related
+issues please contact a CSLOL executive or member. This can be done by setting up a
+<a href="https://cslol.slack.com">CSLOL Slack account here</a> with your Tufts email
+address, by contacting any of the <a href="#current-graduate-students">current
+TuPL graduate students</a> to figure out who the current CSLOL President is,
+or by contacting <a href="https://www.facebook.com/TuftsCSLOL">@TuftsCSLOL on facebook</a>.
+As of this writing the website <a href="https://sites.tufts.edu/cslol/">https://sites.tufts.edu/cslol/</a>
+is very out of date, but contacting the <a href="https://www.facebook.com/TuftsCSLOL">@TuftsCSLOL admins on facebook</a>
+is the most likely way to get a response if you have trouble signing up for the
+<a href="https://cslol.slack.com">CSLOL Slack</a>.
+</p>
+
+<h4>Calendars</h4>
+<p>
+The following Google calendars pertain to research and department events:
+<ul>
+  <li><a href="https://calendar.google.com/calendar/embed?src=c2u24bfp58cuu093n5mkgsdb50%40group.calendar.google.com&ctz=America%2FNew_York">Tufts Computer Science Events</a>, controlled by <a href="https://sites.tufts.edu/cslol/">CSLOL</a>.</li>
+  <li><a href="https://calendar.google.com/calendar/embed?src=shfuant95ndbmgtvlao30h40n4%40group.calendar.google.com&ctz=America%2FNew_York">Tufts Siriusly</a>, controlled by <a href="#tupl">TuPL</a>.</li>
+  <li><a href="https://calendar.google.com/calendar/embed?src=tufts.ase.gsc%40gmail.com&ctz=America%2FNew_York">Tufts GSC Online Calendar</a>, controlled by the <a href="https://ase.tufts.edu/gsc/">Tufts Graduate Student Council (GSC)</a>.</li>
+  <li><a href="http://www.cs.tufts.edu/t/colloquia/current.php">Tufts CS Department Colloquia</a>, controlled by the Department.</li>
+</ul>
+</p>
 
 <h1><span id="contact" class="anchor"></span>TuPL contact info</h1>
 
-<div class="contact-row">
+<div class="contact-content">
     
   <div class="contact-row">
     <div class="contact-entry" id="webmasters">
+      <span id="webmasters" class="anchor"></span>
       <div class="job-title">Webmasters <a href="http://tupl.cs.tufts.edu/">(tupl.cs.tufts.edu)</a></div>
       <div class="contact-names">
         <div class="contact-name"><a href="mailto:karl@cs.tufts.edu">Karl Cronburg</a></div>
@@ -555,6 +657,7 @@ to the elements of our TuPL in the Fall of 2018.
     </div>
 
     <div class="contact-entry" id="slack">
+      <span id="siriusly-slack" class="anchor"></span>
       <div class="job-title">Siriusly Slack <a href="https://siriusly.slack.com/">(siriusly.slack.com)</a></div>
       <div class="contact-names">
         <div class="contact-name"><a href="mailto:karl@cs.tufts.edu">Karl Cronburg</a></div>
@@ -562,6 +665,7 @@ to the elements of our TuPL in the Fall of 2018.
     </div>
 
     <div class="contact-entry" id="mailing-list">
+      <span id="mailing-list" class="anchor"></span>
       <div class="job-title">Mailing List <a href="mailto:tupl@elist.tufts.edu">(tupl@elist.tufts.edu)</a></div>
       <div class="contact-names">
         <div class="contact-name"><a href="mailto:matthew.ahrens@tufts.edu">Matthew P. Ahrens</a></div>
@@ -569,6 +673,7 @@ to the elements of our TuPL in the Fall of 2018.
     </div>
 
     <div class="contact-entry" id="new-student-coordinator">
+      <span id="new-student-coordinator" class="anchor"></span>
       <div class="job-title">New Student Coordinator</div>
       <div class="contact-names">
         <div class="contact-name"><a href="mailto:none">None</a></div>
@@ -578,23 +683,38 @@ to the elements of our TuPL in the Fall of 2018.
   
   <div class="contact-row">
     <div class="contact-entry" id="github-private">
-      <div class="job-title">Private Github <a href="https://github.cs.tufts.edu">(github.cs.tufts.edu/Siriusly)</a></div>
+      <span id="github-organizer" class="anchor"></span>
+      <div class="job-title">Private Github <a href="https://github.cs.tufts.edu">(github.cs.tufts.edu)</a></div>
       <div class="contact-names">
         <div class="contact-name"><a href="mailto:matthew.ahrens@tufts.edu">None</a></div>
       </div>
     </div>
   </div> <!-- class="contact-row" -->
-  
 
+<!--
+    <div class="tuftscs-fb-page">
+      <div class="fb-page" data-href="https://www.facebook.com/TuftsCS/"
+      data-tabs="timeline" data-height="700" data-width="500" data-small-header="false"
+      data-adapt-container-width="true" data-hide-cover="false"
+      data-show-facepile="true"><blockquote cite="https://www.facebook.com/TuftsCS/"
+      class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TuftsCS/">Tufts
+      Department of Computer Science</a></blockquote></div>
+    </div>
+-->
+  </div> <!-- class="social-media" -->
 
-  
-</div>
+</div> <!-- class="contact-content" -->
 
 </div> <!-- id=content -->
 
 <div id="bottom">
 <p>© Copyright 2018-2019 Tufts University Programming Languages |
 website made in-house | TuPL </p>
+  
+  <p><a href="https://www.facebook.com/TuftsCS/">@TuftsCS on Facebook</a> | 
+  <a href="https://twitter.com/tuftscs?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TuftsCS</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <!-- <div class="fb-like" data-href="http://tupl.cs.tufts.edu" data-width="400" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div> -->
+  </p>
 </div>
 
 </div> <!-- class=container -->
