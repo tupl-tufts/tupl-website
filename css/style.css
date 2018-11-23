@@ -94,15 +94,6 @@ body {
   margin: auto;
 }
 
-.contact-entry {
-  float: left; /* Multiple per row */
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
-  /* 4 contact entries per line: */
-  width: 23%;
-  margin: 10px;
-}
-
 .contact-row {
 
 }
@@ -148,8 +139,25 @@ body {
   height: 250px;
 }
 
+/* EXCEPT images in the alumni div, those are smaller: */
+.alumni img {
+  width: 100px;
+  height: 100px;
+}
+
 .person-photo:hover .image-link {
   opacity: 0.7;
+}
+
+/* No link underlines in publications section: */
+#papers-content a {
+  text-decoration: none;
+}
+/* Highlight links instead!: */
+#papers-content a:hover {
+  text-shadow: 0px 0px 1px black;
+  /* text-shadow: 0px 0px 1px rgba(122, 104, 85, 0.4); */
+  border-radius: 5px;
 }
 
 .people-content a {
@@ -174,45 +182,92 @@ body {
   display: table;
 }
 
-.grad-student-entry {
-  background-color: #A93439;
-  border-radius: 40px;
+.projects-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.contact-entry {
+  float: left; /* Multiple per row */
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  /* 4 contact entries per line: */
+  width: 23%;
+  margin: 10px;
+}
+
+.entry {
   color: white;
+  text-align: center;
+}
+
+.large-entry {
   padding: 10px;
   margin: 10px;
+  border-radius: 40px;
+}
+
+.small-entry {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.tiny-entry {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.grad-student-entry {
+  background-color: #A93439;
 
   /* 3 grad students per line */
   width: 28%;
-  text-align: center;
   float: left;
 }
 
 .undergrad-student-entry {
   background-color: #4A0D66;
-  border-radius: 40px;
-  color: white;
-  padding: 10px;
-  margin: 10px;
 
   /* 3 grad students per line */
   width: 28%;
-  text-align: center;
   float: left;
 }
 
 .faculty-entry {
   background-color: #77881C;
-  border-radius: 40px;
-  color: white;
-  padding: 10px;
-  margin: 10px;
 
   /* 2 faculty per line */
   width: 45%;
-  text-align: center;
 
   /* Multiple faculty (2) per line */
   float: left;
+}
+
+.alumni-entry {
+  background-color: #77881C;
+
+  /* 5 alumni per line */
+  width: 18%;
+
+  /* Multiple per line: */
+  float: left;
+}
+
+.projects-entry {
+  background-color: #7A6855;
+  
+  /* 6 projects per line */
+  width: 14%;
+
+  float: left;
+}
+
+.project-descr {
+  font-size: 13px;
+  display: block;
 }
 
 .person-bio {
@@ -242,4 +297,7 @@ body {
   background-color: white;
 }
 
+.alumni .person-photo {
+  width: 100px;
+}
 
