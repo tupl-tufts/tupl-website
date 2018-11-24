@@ -183,6 +183,22 @@ body {
   text-shadow: 0px 0px 1px black;
   /* text-shadow: 0px 0px 1px rgba(122, 104, 85, 0.4); */
   border-radius: 5px;
+  color: black;
+}
+
+#papers-content a {
+  color: inherit;
+  font-size: 20px;
+}
+
+.project-descr a {
+  color: inherit;
+  font-size: inherit;
+}
+
+.project-link a {
+  color: inherit;
+  font-size: 18px;
 }
 
 .people-content a {
@@ -286,6 +302,16 @@ body {
   
   /* 6 projects per line */
   width: 14%;
+
+  float: left;
+}
+
+/* Projects that go at the bottom with a longer description. */
+.projects-entry-wide {
+  background-color: #7A6855;
+  
+  /* 6 projects per line */
+  width: 30%;
 
   float: left;
 }
