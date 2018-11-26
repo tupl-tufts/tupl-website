@@ -174,7 +174,7 @@ body {
   opacity: 0.7;
 }
 
-/* No link underlines in publications section: */
+/* No link underlines in publications section by default: */
 #papers-content a {
   text-decoration: none;
 }
@@ -204,6 +204,10 @@ body {
 .people-content a {
   color: inherit;
   font-size: 20px;
+}
+
+.pdf-link {
+  text-decoration: underline;
 }
 
 .faculty {
