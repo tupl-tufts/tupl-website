@@ -107,6 +107,8 @@ body {
 .content {
   color: black;
   padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* The outer-most container for the website, force the page
@@ -117,6 +119,7 @@ body {
   /* Center the div with margins on both
      sides filling up the remaining max-width */
   margin: auto;
+  
 }
 
 .contact-row {
