@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/css/style.css" type="text/css"/>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" type="text/css"/>
   <title>TuPL - Tufts Programming Languages</title>
+  <script src="/js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 
@@ -20,12 +23,12 @@
 
 <div id="navbar" class="sticky">
   <div id="navbar-links">
-      <a href="#tupl">( TuPL,</a>
-      <a href="#people">People,</a>
-      <a href="#papers">Publications,</a>
-      <a href="#projects">Projects,</a>
-      <a href="#join-us">Join Us,</a>
-      <a href="#contact">Contact )</a>
+      <a id="tupl-link" href="#tupl">( TuPL,</a>
+      <a id="people-link" href="#people">People,</a>
+      <a id="papers-link" href="#papers">Publications,</a>
+      <a id="projects-link" href="#projects">Projects,</a>
+      <a id="join-us-link" href="#join-us">Join Us,</a>
+      <a id="contact-link" href="#contact">Contact )</a>
   </div> <!-- id=navbar -->
     
   <div id="logo">
@@ -71,7 +74,7 @@ Tufts University.
             <img class="image-link" src="/images/kfisher.jpg" alt="kfisher.jpg"></a></div>
         <div class="person-name">Kathleen Fisher</div>
         <div class="person-email"><a href="mailto:kfisher@cs.tufts.edu">kfisher@cs.tufts.edu</a></div>
-        <div class="person-position">Professor, Department Chair</div>
+        <div class="person-position">Professor, Dept. Chair</div>
         <div class="person-link"><a href="https://www.cs.tufts.edu/~kfisher">cs.tufts.edu/~kfisher</a></div>
         <div class="person-bio">Works on domain-specific languages, program synthesis, and high-assurance systems.</div>
       </div>
@@ -84,6 +87,8 @@ Tufts University.
         <div class="person-position">Associate Professor</div>
         <div class="person-link"><a href="https://www.cs.tufts.edu/~sguyer">cs.tufts.edu/~sguyer</a></div>
         <div class="person-bio">Works on garbage-collection, and dynamic and static program analysis.</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
       </div>
     </div> <!-- class=person-row -->
 
@@ -97,6 +102,7 @@ Tufts University.
         <div class="person-position">Associate Professor</div>
         <div class="person-link"><a href="https://www.cs.tufts.edu/~nr">cs.tufts.edu/~nr</a></div>
         <div class="person-bio">Works on functional programming and computer-science education.</div>
+        <div>&nbsp;</div>
       </div>
       <div class="faculty-entry large-entry entry"><span id="jfoster" class="anchor"></span>
         <div class="person-photo">
@@ -141,6 +147,7 @@ Tufts University.
         <div class="person-position">Advisor: <a href="#sguyer">Sam Guyer</a></div>
         <div class="person-link"><a href="https://www.cronburg.com">cronburg.com/</a></div>
         <div class="person-bio">Works on memory layout verification and debugging.</div>
+        <div>&nbsp;</div>
       </div>
       
       <div class="grad-student-entry large-entry entry">
@@ -154,10 +161,6 @@ Tufts University.
         <div class="person-link"><a href="https://www.cs.tufts.edu/~hhuang04">cs.tufts.edu/~hhuang04/</a></div>
         <div class="person-bio">Works on machine learning and software analysis.</div>
       </div>
-
-    </div> <!-- class="person-row" -->
-   
-    <div class="person-row">
 
       <div class="grad-student-entry large-entry entry">
         <span id="mahrens" class="anchor"></span>
@@ -193,12 +196,9 @@ Tufts University.
         <div class="person-position">Advisor: <a href="#kfisher">Kathleen Fisher</a></div>
         <div class="person-link"><a href="https://www.cs.tufts.edu/~slasser">cs.tufts.edu/~slasser/</a></div>
         <div class="person-bio">Works on parsing and verification.</div>
+        <div class="person-bio">&nbsp;</div>
       </div>
     
-    </div> <!-- class="person-row" -->
-    
-    <div class="person-row">
-      
       <div class="grad-student-entry large-entry entry">
         <span id="chandler" class="anchor"></span>
         <div class="person-photo">
@@ -235,10 +235,6 @@ Tufts University.
         <div class="person-bio">Works on resource analysis, and program synthesis.</div>
       </div>
     
-    </div> <!-- class="person-row" -->
-
-    <div class="person-row">
-      
       <div class="grad-student-entry large-entry entry">
         <span id="milod" class="anchor"></span>
         <div class="person-photo">
@@ -249,48 +245,28 @@ Tufts University.
         <div class="person-position">Advisor: <a href="#jfoster">Jeff Foster</a></div>
         <div class="person-link"><a href="https://www.cs.tufts.edu/~milod">cs.tufts.edu/~milod</a></div>
         <div class="person-bio">Works on refinement types.</div>
-      </div>
-
-      <div class="grad-student-entry large-entry entry">
-        <span id="xqi01" class="anchor"></span>
-        <div class="person-photo">
-          <a href="https://www.xuanruiqi.com/">
-            <img class="image-link" src="/images/ray.jpg" alt="xqi01.jpg"></a></div>
-        <div class="person-name">Xuanrui (Ray) Qi</div>
-        <div class="person-email"><a href="mailto:xqi01@cs.tufts.edu">xqi01@cs.tufts.edu</a></div>
-        <div class="person-position">Advisor: <a href="#sguyer">Sam Guyer</a> </div>
-        <div class="person-link"><a href="https://www.xuanruiqi.com/">xuanruiqi.com/</a></div>
-        <div class="person-bio">Works on dependently-typed programming languages.</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
       </div>
 
     </div>
 
   </div>
 
+  <!-- Add undergrad students at the *bottom* of this div. Delete graduated students
+       and move them to the alumni div -->
+  <!--
   <div class="undergrad-students">
-    <!-- Add undergrad students at the *bottom* of this div. Delete graduated students
-         and move them to the alumni div -->
     <span id="current-undergraduate-students" class="anchor"></span>
     <h2 style="text-align: center">Current Undergraduate Students</h2>  
       
     <div class="person-row">
-
-      <div class="undergrad-student-entry large-entry entry">
-        <span id="msun05" class="anchor"></span>
-        <div class="person-photo">
-          <a href="https://www.cs.tufts.edu/~msun05">
-            <img class="image-link" src="/images/msun05.jpg" alt="msun05.jpg"></a></div>
-        <div class="person-name">Marilyn Sun</div>
-        <div class="person-email"><a href="mailto:msun05@cs.tufts.edu">msun05@cs.tufts.edu</a></div>
-        <div class="person-position">Advisor:</div>
-        <div class="person-link"><a href="https://www.cs.tufts.edu/~msun05">cs.tufts.edu/~msun05</a></div>
-        <div class="person-bio">Works on functional programming analyses.</div>
-      </div>
-
-    </div> <!-- class="person-row" -->
+    </div>
 
   </div>
-  
+  -->
+
   <div class="alumni">
     <h2 style="text-align: center">Alumni &amp; Former Members</h2>
 
@@ -330,9 +306,7 @@ Tufts University.
         <div class="person-name">Nathan P. Ricci</div>
         <div class="person-position">PhD, Microsoft</div>
       </div>
-    </div> <!-- class="person-row" -->
-     
-    <div class="person-row"> 
+      
       <div class="alumni-entry small-entry entry">
         <span id="ywang30" class="anchor"></span>
         <div class="person-photo">
@@ -368,9 +342,7 @@ Tufts University.
         <div class="person-name">Robert Dockins</div>
         <div class="person-position">MS, <a href="http://galois.com/">Galois</a></div>
       </div>
-    </div> <!-- class="person-row" -->
-
-    <div class="person-row">
+      
       <div class="alumni-entry small-entry entry">
         <span id="adam-lewis" class="anchor"></span>
         <div class="person-photo">
@@ -406,9 +378,7 @@ Tufts University.
         <div class="person-name">Ben Schwalb</div>
         <div class="person-position">UG</div>
       </div>
-    </div> <!-- class="person-row" -->
-
-    <div class="person-row">
+      
       <div class="alumni-entry small-entry entry">
         <span id="sara-su" class="anchor"></span>
         <div class="person-photo">
@@ -427,6 +397,29 @@ Tufts University.
         <div class="person-position"></div>
       </div>
 
+      <div class="alumni-entry small-entry entry">
+        <span id="xqi01" class="anchor"></span>
+        <div class="person-photo">
+          <a href="https://www.xuanruiqi.com/">
+            <img class="image-link" src="/images/ray.jpg" alt="xqi01.jpg"></a></div>
+        <div class="person-name">Xuanrui (Ray) Qi</div>
+        <div class="person-email"><a href="mailto:xqi01@cs.tufts.edu">xqi01@cs.tufts.edu</a></div>
+        <!-- <div class="person-position">Advisor: <a href="#sguyer">Sam Guyer</a> </div> -->
+        <div class="person-link"><a href="https://www.xuanruiqi.com/">xuanruiqi.com/</a></div>
+        <!-- <div class="person-bio">Works on dependently-typed programming languages.</div> -->
+      </div>
+
+      <div class="alumni-entry small-entry entry">
+        <span id="msun05" class="anchor"></span>
+        <div class="person-photo">
+          <a href="https://www.cs.tufts.edu/~msun05">
+            <img class="image-link" src="/images/msun05.jpg" alt="msun05.jpg"></a></div>
+        <div class="person-name">Marilyn Sun</div>
+        <div class="person-email"><a href="mailto:msun05@cs.tufts.edu">msun05@cs.tufts.edu</a></div>
+        <div class="person-link"><a href="https://www.cs.tufts.edu/~msun05" style="font-size: 0.6em;">cs.tufts.edu/~msun05</a></div>
+        <!-- <div class="person-bio">Works on functional programming analyses.</div> -->
+      </div>
+    
     </div> <!-- class="person-row" -->
   </div>
 </div>
@@ -437,9 +430,10 @@ Tufts University.
   <!-- Sorted in reverse-cronological order - add new publications to the top of this list --> 
 
   <!-- 2018 -->
-  
-  <p>
-  <a href="papers/synthesizing-quotient-lenses.pdf"><span class="pdf-link">Synthesizing Quotient Lenses</span></a>,
+
+  <div class="paper-entry">
+  <span class="pdf-link">
+    <a href="papers/synthesizing-quotient-lenses.pdf">Synthesizing Quotient Lenses</a></span>,
   Solomon Maina,
   <a href="https://www.cs.princeton.edu/~amiltner/">Anders Miltner</a>,
   <a href="#kfisher">Kathleen Fisher</a>,
@@ -450,9 +444,9 @@ Tufts University.
   <!-- 80:1-80:29","80","29","Bidirectional Programming, Program Synthesis, Type Systems, Type-Directed Synthesis","10.1145/3236775","Proc. ACM Program. Lang.","September 2018","2","ICFP, "July","2018","2475-1421, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=3236775">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/synthesizing-bijective-lenses.pdf"><span class="pdf-link">Synthesizing Bijective Lenses</span></a>,
   <a href="https://www.cs.princeton.edu/~amiltner/">Anders Miltner</a>,
   <a href="#kfisher">Kathleen Fisher</a>,
@@ -463,12 +457,12 @@ Tufts University.
   <!-- 1:1-1:30","1","30","Bidirectional Programming, Program Synthesis, Type Systems, Type-Directed Synthesis","10.1145/3158089","Proc. ACM Program. Lang.","January 2018","2","POPL, "December","2017","2475-1421, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=3158089">
   [ACM]</a>
-  </p>
+  </div>
 
   <!-- 2017 -->
   <hr>
 
-  <p>
+  <div class="paper-entry">
   <a href="/papers/meta17-final2.pdf">
     <span class="pdf-link">WIP: Markedly: a cartographic approach for mapping eDSL implementation costs</span>
   </a>.
@@ -477,12 +471,12 @@ Tufts University.
   <a href="https://2017.splashcon.org/event/meta-2017-markedly-a-cartographic-approach-for-mapping-edsl-implementation-costs">
     [SPLASH]
   </a>
-  </p>
+  </div>
 
   <!-- 2016 -->
   <hr>
   
-  <p>
+  <div class="paper-entry">
   <a href="papers/incremental-forest.pdf"><span class="pdf-link">Incremental Forest: A DSL for Efficiently Managing Filestores</span></a>,
   <a href="https://www.cs.cornell.edu/~dilorenzo/">Jonathan DiLorenzo</a>,
   <a href="https://www.cis.upenn.edu/~rmzhang/">Richard Zhang</a>,
@@ -493,19 +487,20 @@ Tufts University.
   <!-- 252-271, "20","Data description languages, ad hoc data, domain-specific languages, file systems, filestores, laziness","10.1145/3022671.2984034","SIGPLAN Not.","October 2016","51","10, "October","2016","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=2984034">
   [ACM]</a>
-  </p>
+  </div>
 
+  <div class="paper-entry">
   <a href="/papers/prioritized.pdf">
     <span class="pdf-link">Prioritized Garbage Collection: Explicit GC Support for Software Caches</span>
-  <a href="https://dl.acm.org/citation.cfm?id=1353533">
   </a>.
-  <a href="#dan">Diogenes Nunez</a>, <a href="sguyer">Samuel Z. Guyer</a>, <a href="https://emeryberger.com/"Emery D. Berger</a>,
+  <a href="#dan">Diogenes Nunez</a>, <a href="sguyer">Samuel Z. Guyer</a>, <a href="https://emeryberger.com/">Emery D. Berger</a>,
   <a href="https://2016.splashcon.org/track/splash-2016-oopsla">OOPSLA 2016</a>,
   <a href="https://dl.acm.org/citation.cfm?id=2984028">
     [ACM]
   </a>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="/papers/p114-wang.pdf">
     <span class="pdf-link">Autobahn: using genetic algorithms to infer strictness annotations</span>
   </a>.
@@ -514,9 +509,9 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=2976009">
     [ACM]
   </a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="https://www.cs.tufts.edu/~nr/pubs/disintegrator.pdf">
     <span class="pdf-link">Symbolic Bayesian Inference by Lazy Partial Evaluation</span>
   </a>
@@ -526,12 +521,12 @@ Tufts University.
   <a href="https://www.semanticscholar.org/paper/Symbolic-Bayesian-Inference-by-Lazy-Partial-Shan-Ramsey/79affcb8d9fd69e39cc24bf646338aad0e5a1a39">
     [Semantic Scholar]
   </a>
-  </p>
+  </div>
 
   <!-- 2015 -->
   <hr>
 
-  <p>
+  <div class="paper-entry">
   <a href="/papers/mrfy.pdf">
     <span class="pdf-link">MRFy: Remote Homology Detection for Beta-Structural Proteins Using Markov Random Fields and Stochastic Search</span>
   </a>.
@@ -543,12 +538,12 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=2817098">
     [ACM]
   </a>
-  </p>
+  </div>
 
   <!-- 2014 -->
   <hr>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/allstar-techreport.pdf"><span class="pdf-link">Adaptive LL(*) Parsing: The Power of Dynamic Analysis</span></a>,
   <a href="https://parrt.cs.usfca.edu/">Terence Parr</a>,
   Sam Harwell,
@@ -557,17 +552,17 @@ Tufts University.
   <!-- 579-598, "20","all(*), augmented transition networks, dfa, gll, glr, grammar, ll(*), nondeterministic parsing, peg","10.1145/2714064.2660202","SIGPLAN Not.","October 2014","49","10, "October","2014","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=2660202">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/hacms-keynote.pdf"><span class="pdf-link">Using Formal Methods to Enable More Secure Vehicles: DARPA's HACMS Program</span></a>,
   <a href="#kfisher">Kathleen Fisher</a>,
   <a href="http://icfpconference.org/icfp2014/">ICFP 2014</a>,
   <!-- 1-1, "1","cyber-physical systems, formal methods, hacms, high assurance software","10.1145/2692915.2628165","SIGPLAN Not.","September 2014","49","9, "August","2014","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=2628165">[ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/PracticesOfPLDI.pdf"><span class="pdf-link">Practices of PLDI</span></a>,
   <a href="https://www.hboehm.info/">Hans Boehm</a>,
   <a href="https://www.cs.virginia.edu/~jwd/">Jack Davidson</a>,
@@ -584,9 +579,9 @@ Tufts University.
   <!-- 33-38, "6, "10.1145/2641638.2641649","SIGPLAN Not.","April 2014","49","4, "July","2014","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=2641649">
   [ACM]</a>
-  </p>
+  </div>
   
-  <p>
+  <div class="paper-entry">
   <a href="https://www.cs.tufts.edu/~nr/pubs/htdp.pdf">
     <span class="pdf-link">On Teaching How to Design Programs: Observations from a Newcomer</span>
   </a>.
@@ -595,12 +590,12 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=2628137">
     [ACM]
   </a>
-  </p>
+  </div>
 
   <!-- 2013 -->
   <hr>
   
-  <p>
+  <div class="paper-entry">
   <a href="http://www.cs.tufts.edu/r/redline/papers/elephanttracks-ismm-2013.pdf">
     <span class="pdf-link">Elephant Tracks: Portable Production of Complete And Precise GC Traces</span>
   </a>.
@@ -611,9 +606,9 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=2466484">
     [ACM]
   </a>
-  </p>
+  </div>
   
-  <p>
+  <div class="paper-entry">
   <a href="https://www.cs.tufts.edu/~nr/pubs/interps.pdf">
     <span class="pdf-link">Engineering Definitional Interpreters</span></a>.
     <a href="http://janmidtgaard.dk/">Jan Midtgaard</a>,
@@ -623,21 +618,21 @@ Tufts University.
   <a href="dl.acm.org/citation.cfm?id=2505894">
     [ACM]
   </a>
-  </p>
+  </div>
   
   <!-- 2012 -->
   <hr>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/hacms-keynote-HILT-2012.pdf"><span class="pdf-link">HACMS: High Assurance Cyber Military Systems</span></a>,
   <a href="#kfisher">Kathleen Fisher</a>,
   <!-- 51-52, "2","embedded systems, high-assurance software","10.1145/2402709.2402695","Ada Lett.","December 2012","32","3, "December","2012","1094-3641, ", ", "ACM","New York, NY, USA" -->
   <a href="https://www.sigada.org/conf/hilt2012/">HILT 2012</a>
   <a href="https://dl.acm.org/citation.cfm?id=2402695">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/cacm13.pdf"><span class="pdf-link">An Introduction to Data Representation Synthesis</span></a>,
   <a href="http://theory.stanford.edu/~hawkinsp/">Peter Hawkins</a>,
   <a href="https://people.csail.mit.edu/rinard/">Martin Rinard</a>,
@@ -648,9 +643,9 @@ Tufts University.
   <!-- 91-99, "9, "10.1145/2380656.2380677","Commun. ACM","December 2012","55","12, "December","2012","0001-0782, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=2380677">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/pldi12concurrent.pdf"><span class="pdf-link">Concurrent Data Representation Synthesis</span></a>,
   <a href="http://theory.stanford.edu/~hawkinsp/">Peter Hawkins</a>,
   <a href="http://theory.stanford.edu/~aiken/">Alex Aiken</a>,
@@ -661,9 +656,9 @@ Tufts University.
   <!-- 417-428, "12","lock placement, synthesis","10.1145/2345156.2254114","SIGPLAN Not.","June 2012","47","6, "June","2012","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=2254114">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/esop12lockplacements.pdf"><span class="pdf-link">Reasoning About Lock Placements</span></a>,
   <a href="http://theory.stanford.edu/~hawkinsp/">Peter Hawkins</a>,
   <a href="http://theory.stanford.edu/~aiken/">Alex Aiken</a>,
@@ -674,9 +669,9 @@ Tufts University.
   <!-- 336-356, "21, "10.1007/978-3-642-28869-2_17, ", ", "2012, "Proceedings of the 21st European Conference on Programming Languages and Systems","ESOP'12, "978-3-642-28868-5","Tallinn, Estonia","Springer-Verlag","Berlin, Heidelberg" -->
   <a href="https://dl.acm.org/citation.cfm?id=2259265">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/nourishing-the-future-plmw-2012.pdf"><span class="pdf-link">Nourishing the Future of the Field: The Programming Language Mentoring Workshop 2012</span></a>,
   <a href="#kfisher">Kathleen Fisher</a>,
   <a href="https://www.cs.ubc.ca/~rxg/">Ronald Garcia</a>,
@@ -685,9 +680,9 @@ Tufts University.
   <!-- 14-15, "2, "10.1145/2442776.2448985","SIGPLAN Not.","April 2012","47","4a, "March","2012","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=2448985">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/learnpads-padl2012.pdf"><span class="pdf-link">LearnPADS++: Incremental Inference of Ad Hoc Data Formats</span></a>,
   <a href="http://www.cs.sjtu.edu.cn/~kzhu/">Kenny Q. Zhu</a>,
   <a href="#kfisher">Kathleen Fisher</a>,
@@ -696,9 +691,9 @@ Tufts University.
   <!-- 168-182, "15, "10.1007/978-3-642-27694-1_13, ", ", "2012, "Proceedings of the 14th International Conference on Practical Aspects of Declarative Languages","PADL'12, "978-3-642-27693-4","Philadelphia, PA","Springer-Verlag","Berlin, Heidelberg" -->
   <a href="https://dl.acm.org/citation.cfm?id=2187138">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="https://www.cs.tufts.edu/~nr/pubs/mrfy.pdf">
     <span class="pdf-link">Experience Report: Haskell in Computational Biology</span></a>.
     <a href="https://homepage.cs.uri.edu/~ndaniels/">Noah M. Daniels</a>,
@@ -708,12 +703,12 @@ Tufts University.
   <a href="dl.acm.org/citation.cfm?id=2364560">
     [ACM]
   </a>
-  </p>
+  </div>
 
   <!-- 2011 -->
   <hr>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/forest-draft.pdf"><span class="pdf-link">Forest: A Language and Toolkit for Programming with Filestores</span></a>,
   <a href="#kfisher">Kathleen Fisher</a>,
   <a href="http://www.cs.cornell.edu/~jnfoster/">Nate Foster</a>,
@@ -723,9 +718,9 @@ Tufts University.
   <!-- 292-306, "15","ad hoc data, bidirectional transformations, data description languages, domain-specific languages, file systems, filestores, generic programming, haskell","10.1145/2034574.2034814","SIGPLAN Not.","September 2011","46","9, "September","2011","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=2034814">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/pldi11b.pdf"><span class="pdf-link">Data Representation Synthesis</span></a>,
   <a href="http://theory.stanford.edu/~hawkinsp/">Peter Hawkins</a>,
   <a href="http://theory.stanford.edu/~aiken/">Alex Aiken</a>,
@@ -736,9 +731,9 @@ Tufts University.
   <!-- 38-49, "12","composite data structures, synthesis","10.1145/1993316.1993504","SIGPLAN Not.","June 2011","46","6, "June","2011","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=1993504">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="papers/LL-star-PLDI11.pdf"><span class="pdf-link">LL(*): The Foundation of the ANTLR Parser Generator</span></a>,
   <a href="https://parrt.cs.usfca.edu/">Terence Parr</a>,
   <a href="#kfisher">Kathleen Fisher</a>,
@@ -746,9 +741,9 @@ Tufts University.
   <!-- 425-436, "12","augmented transition networks, backtracking, context-sensitive parsing, deterministic finite automata, glr, memoization, nondeterministic parsing, peg, semantic predicates, subset construction, syntactic predicates","10.1145/1993316.1993548","SIGPLAN Not.","June 2011","46","6, "June","2011","0362-1340, ", ", "ACM","New York, NY, USA" -->
   <a href="https://dl.acm.org/citation.cfm?id=1993548">
   [ACM]</a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="https://www.cs.tufts.edu/~nr/pubs/tiler.pdf">
     <span class="pdf-link">Resourceable, Retargetable, Modular Instruction Selection Using a Machine-Independent, Type-Based Tiling of Low-Level Intermediate Code</span>
   </a>
@@ -758,9 +753,9 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?doid=1926385.1926451">
     [ACM]
   </a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="https://www.cs.tufts.edu/~nr/pubs/embedj.pdf">
     <span class="pdf-link">Embedding an Interpreted Language Using Higher-Order Functions and Types</span></a>,
     <a href="#nr">Norman Ramsey</a>,
@@ -768,11 +763,11 @@ Tufts University.
   <a href="https://doi.org/10.1017/S0956796811000219">
     [ACM]
   </a> 
-  </p>
+  </div>
 
   <!-- 2010 -->
   <hr>
-  <p>
+  <div class="paper-entry">
   <a href="http://www.cs.tufts.edu/r/redline/papers/deal-oopsla-2010.pdf">
     <span class="pdf-link">What Can the GC Compute Efficiently? A Language for Heap Assertions at GC Time</span>
   </a>.
@@ -785,9 +780,9 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=1869482">
     [ACM]
   </a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="http://www.cs.tufts.edu/r/redline/papers/breadcrumbs-pldi-2010.pdf">
     <span class="pdf-link">Breadcrumbs: Efficient Context Sensitivity for Dynamic Bug Detection Analyses</span>
   </a>.
@@ -798,9 +793,9 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=1806599">
     [ACM]
   </a>
-  </p>
+  </div>
 
-  <p>
+  <div class="paper-entry">
   <a href="http://www.cs.tufts.edu/r/redline/papers/heapviz-softvis-2010.pdf">
     <span class="pdf-link">Heapviz: Interactive Heap Visualization for Program Understanding and Debugging</span>
   </a>.
@@ -814,10 +809,10 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=1879222">
     [ACM]
   </a>
-  </p>
+  </div>
 
   <span id="hoopl-publication" class="anchor"></span>
-  <p>
+  <div class="paper-entry">
   <a href="/papers/hoopl10.pdf">
     <span class="pdf-link">Hoopl: a modular, reusable library for dataflow analysis and transformation</span></a>.
   <a href="#nr">Norman Ramsey</a>,
@@ -827,12 +822,12 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=1863539">
     [ACM]
   </a>
-  </p>
+  </div>
 
   <!-- 2009 -->
   <hr>
 
-  <p>
+  <div class="paper-entry">
   <a href="http://www.cs.tufts.edu/r/redline/papers/gcassertions-pldi-2009.pdf">
     <span class="pdf-link">GC Assertions: Using the Garbage Collector to Check Heap Properties</span>
   </a>.
@@ -842,9 +837,9 @@ Tufts University.
   <a href="https://dl.acm.org/citation.cfm?id=1353533">
     [ACM]
   </a>
-  </p>
+  </div>
 
-  <p style="font-size: 12px">ACM Disclaimer: The documents contained in these
+  <p class="disclaimer">ACM Disclaimer: The documents contained in these
     pages are included to ensure timely dissemination of scholarly and technical
     work on a non-commercial basis. Copyright and all rights therein are maintained
     by the authors or by other copyright holders, notwithstanding that they have
@@ -861,74 +856,69 @@ Tufts University.
 
   <div class="projects-row">
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="https://genetic-strictness.github.io/Autobahn">Autobahn</a></span>
+      <div class="project-link"><a href="https://genetic-strictness.github.io/Autobahn">Autobahn</a></div>
       <span class="project-descr">
         Inferring strictness annotations in Haskell programs using a genetic algorithm.
       </span>
     </div>
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="https://github.com/padsproj">PADS</a></span>
+      <div class="project-link"><a href="https://github.com/padsproj">PADS</a></div>
       <span class="project-descr">
         Domain specific language for processing ad-hoc data implemented in C and Haskell.
       </span>
     </div>
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="https://github.com/cronburg/antlr-haskell">antlr-haskell</a></span>
+      <div class="project-link"><a href="https://github.com/cronburg/antlr-haskell">antlr-haskell</a></div>
       <span class="project-descr">
         Port of ANTLR to Haskell as a quasiquoted embedded domain specific language.
       </span>
     </div>
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="https://github.com/slasser/AllStar">AllStar</a></span>
+      <div class="project-link"><a href="https://github.com/slasser/AllStar">AllStar</a></div>
       <span class="project-descr">
         Work on a provably correct implementation of the ALL(*) parsing algorithm.
       </span>
     </div>
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="https://github.com/System-Indystress/Butter">Butter</a></span>
+      <div class="project-link"><a href="https://github.com/System-Indystress/Butter">Butter</a></div>
       <span class="project-descr">
         A distributed computation DSL for easily spreading around monadic computation in Haskell.
       </span>
     </div>
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="http://www.cs.tufts.edu/r/redline/elephantTracks/index.html">Elephant Tracks</a></span>
+      <div class="project-link"><a href="http://www.cs.tufts.edu/r/redline/elephantTracks/index.html">Elephant Tracks</a></div>
       <span class="project-descr">
         A garbage collection tracing tool for Java programs.
       </span>
     </div>
-  </div> <!-- class="projects-row" -->
-  <div class="projects-row">
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="http://www.cs.tufts.edu/r/redline/heapviz/">Heapviz</a></span>
+      <div class="project-link"><a href="http://www.cs.tufts.edu/r/redline/heapviz/">Heapviz</a></div>
       <span class="project-descr">
         Tool for visualizing and exploring snapshots of the heap obtained from running Java programs.
       </span>
     </div>
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="https://ghc.haskell.org/trac/ghc/blog/newcg-update">Glorious New Code Generator</a></span>
+      <div class="project-link"><a href="https://ghc.haskell.org/trac/ghc/blog/newcg-update">Glorious New Code Generator</a></div>
       <span class="project-descr">
         Significant architectural changes to the GHC with a Hoopl-based IR, integrated as of GHC 7.8.
       </span>
     </div>
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="https://www.cs.tufts.edu/~nr/pubs/hoopl-abstract.html">Hoopl</a></span>
+      <div class="project-link"><a href="https://www.cs.tufts.edu/~nr/pubs/hoopl-abstract.html">Hoopl</a></div>
       <span class="project-descr">
         A modular, reusable library for dataflow analysis and transformation.
         <a href="#hoopl-publication">See publication.</a>
       </span>
     </div>
     <div class="projects-entry tiny-entry entry">
-      <span class="project-link"><a href="https://www.cs.tufts.edu/~nr/pubs/eng-abstract.html">Teaching Technical Writing</a></span>
+      <div class="project-link"><a href="https://www.cs.tufts.edu/~nr/pubs/eng-abstract.html">Teaching Technical Writing</a></div>
       <span class="project-descr">
         A handbook for teaching writing to students in science or engineering.
       </span>
     </div>
-
-  </div> <!-- class="projects-row" -->
-  <div class="projects-row">
     <div class="projects-entry-wide large-entry entry">
-      <span class="project-link">
-        <a href="https://www.cs.tufts.edu/~nr/build-prove-compare/">Build, Prove, Compare</a></span>
+      <div class="project-link">
+        <a href="https://www.cs.tufts.edu/~nr/build-prove-compare/">Build, Prove, Compare</a></div>
       <span class="project-descr">
         For people who will practice the profession of software,
         programming-language skills are growing steadily more important. Twenty
@@ -955,7 +945,7 @@ to you, but you should get in touch with your primary TuPL contact to figure out
 which pieces are pertinent.
 </p>
 
-<h4>Linux home directory</h4>
+<h2>Linux home directory</h2>
 <p>
 Once you arrive on campus the first thing you should do is head to the
 <a href="http://systems.eecs.tufts.edu/">EECS systems staff</a> in
@@ -968,10 +958,10 @@ computers, and your home directory.
 
 <p>
 If you ever forget your EECS password but know your Tufts email / UTLN password,
-you can recover access to your EECS account by going here: <a href="https://www.eecs.tufts.edu/~accounts/reset.cgi">
+you can recover access to your EECS account by going here: <a href="https://www.eecs.tufts.edu/~accounts/reset.cgi" class="containit">
 https://www.eecs.tufts.edu/~accounts/reset.cgi</a>.
 
-<h4>GitHub</h4>
+<h2>GitHub</h2>
 
 <p>
 Once you have an EECS account, you can use that to login to
@@ -999,7 +989,7 @@ have you added to the <a href="https://github.com/RedlineResearch">Redline Resea
 organization on public github.
 </p>
 
-<h4>CSLOL</h4>
+<h2>CSLOL</h2>
 
 <p>
 Although not specific to TuPL, the
@@ -1018,16 +1008,15 @@ is the most likely way to get a response if you have trouble signing up for the
 <a href="https://cslol.slack.com">CSLOL Slack</a>.
 </p>
 
-<h4>Calendars</h4>
-<p>
-The following Google calendars pertain to research and department events:
+<h2>Calendars</h2>
+<p>The following Google calendars pertain to research and department events:</p>
+
 <ul>
   <li><a href="https://calendar.google.com/calendar/embed?src=c2u24bfp58cuu093n5mkgsdb50%40group.calendar.google.com&ctz=America%2FNew_York">Tufts Computer Science Events</a>, controlled by <a href="https://sites.tufts.edu/cslol/">CSLOL</a>.</li>
   <li><a href="https://calendar.google.com/calendar/embed?src=shfuant95ndbmgtvlao30h40n4%40group.calendar.google.com&ctz=America%2FNew_York">Tufts Siriusly</a>, controlled by <a href="#tupl">TuPL</a>.</li>
   <li><a href="https://calendar.google.com/calendar/embed?src=tufts.ase.gsc%40gmail.com&ctz=America%2FNew_York">Tufts GSC Online Calendar</a>, controlled by the <a href="https://ase.tufts.edu/gsc/">Tufts Graduate Student Council (GSC)</a>.</li>
   <li><a href="http://www.cs.tufts.edu/t/colloquia/current.php">Tufts CS Department Colloquia</a>, controlled by the Department.</li>
 </ul>
-</p>
 
 <h1><span id="contact" class="anchor"></span>TuPL contact info</h1>
 
@@ -1035,7 +1024,7 @@ The following Google calendars pertain to research and department events:
     
   <div class="contact-row">
     <div class="contact-entry" id="webmasters">
-      <span id="webmasters" class="anchor"></span>
+      <span class="anchor"></span>
       <div class="job-title">Webmasters <a href="http://tupl.cs.tufts.edu/">(tupl.cs.tufts.edu)</a></div>
       <div class="contact-names">
         <div class="contact-name"><a href="mailto:karl@cs.tufts.edu">Karl Cronburg</a></div>
@@ -1052,7 +1041,7 @@ The following Google calendars pertain to research and department events:
     </div>
 
     <div class="contact-entry" id="mailing-list">
-      <span id="mailing-list" class="anchor"></span>
+      <span class="anchor"></span>
       <div class="job-title">Mailing List <a href="mailto:tupl@elist.tufts.edu">(tupl@elist.tufts.edu)</a></div>
       <div class="contact-names">
         <div class="contact-name"><a href="mailto:matthew.ahrens@tufts.edu">Matthew P. Ahrens</a></div>
@@ -1060,15 +1049,13 @@ The following Google calendars pertain to research and department events:
     </div>
 
     <div class="contact-entry" id="new-student-coordinator">
-      <span id="new-student-coordinator" class="anchor"></span>
+      <span class="anchor"></span>
       <div class="job-title">New Student Coordinator</div>
       <div class="contact-names">
         <div class="contact-name"><a href="mailto:blachanc@cs.tufts.edu">Brian LaChance</a></div>
       </div>
     </div>
-  </div> <!-- class="contact-row" -->
-  
-  <div class="contact-row">
+    
     <div class="contact-entry" id="github-private">
       <span id="github-organizer" class="anchor"></span>
       <div class="job-title">TuPL GitHub <a href="https://github.cs.tufts.edu/siriusly">(github.cs.tufts.edu)</a></div>
@@ -1099,15 +1086,13 @@ The following Google calendars pertain to research and department events:
 website made in-house, with love | TuPL </p>
   
   <p><a href="https://www.facebook.com/TuftsCS/">@TuftsCS on Facebook</a> | 
-  <a href="https://twitter.com/tuftscs?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TuftsCS</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a href="https://twitter.com/tuftscs?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TuftsCS</a><script async src="https://platform.twitter.com/widgets.js"></script>
   <!-- <div class="fb-like" data-href="http://tupl.cs.tufts.edu" data-width="400" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div> -->
 | 
 <script>
   document.write("Page last modified on: " + document.lastModified);
 </script>
   </p>
-</div>
-
 </div> <!-- class=container -->
 
 <script>
@@ -1116,13 +1101,39 @@ window.onscroll = function() {pageMoved()};
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
+var navbar_entries = ["tupl", "people", "papers", "projects", "join-us", "contact"];
 function pageMoved() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }
+
+  var pos = 0;
+  console.log("oops");
+  for (i = 0; i < navbar_entries.length; i++) {
+    var scrollTop = $(window).scrollTop();
+    var elemOffset = $("#" + navbar_entries[i]).offset().top;
+    var distance = elemOffset - scrollTop;
+    console.log(distance);
+    if (distance - 30 < 0) { /* Magic number 30px seems to work, because of offset for anchors */
+      $("#navbar-links").find("#" + navbar_entries[i] + "-link")
+        .css("text-shadow", "3px 3px 3px black")
+        .css("background-color", "");
+      pos = i;
+    } else {
+      $("#navbar-links").find("#" + navbar_entries[i] + "-link")
+        .css("text-shadow", "0px 0px 1px black")
+        .css("background-color", "");
+    }
+  }
+  $("#navbar-links").find("#" + navbar_entries[pos] + "-link")
+    .css("background-color", "#A93439");
+
 }
+$(document).ready(function() {
+  pageMoved();
+});
 </script>
 
 </body>

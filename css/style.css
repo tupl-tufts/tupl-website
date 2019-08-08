@@ -13,7 +13,8 @@ body {
   background-color: #734021; /* Tufts brown */
   padding-top: 1px;
   padding-bottom: 1px;
-  padding-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -37,11 +38,11 @@ body {
   width: 7%;
 
   display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
 
-  font-size: 20px;
   font-weight: bold;
+  position: absolute;
+  right: 1%;
+  top: 20%;
 }
 
 .social-media-content {
@@ -84,13 +85,13 @@ body {
 #navbar a {
   color: inherit;        /* don't color links differently */
   text-decoration: none; /* no underlining */
-  
+
   float: left;
-  padding: 14px;
-  
+  padding: 1.4vw; /* 2.1vw; */
+
   font-size: 25px;
   font-weight: bold;
-} 
+}
 
 /* sticky gets triggered (added to navbar) when user scrolls the page */
 .sticky {
@@ -152,7 +153,6 @@ body {
 
 .contact-name {
   padding: 10px;
-  font-size: 20px;
   text-align: center;
   color: white;
 }
@@ -198,7 +198,6 @@ body {
 
 #papers-content a {
   color: inherit;
-  font-size: 20px;
 }
 
 .project-descr a {
@@ -213,7 +212,6 @@ body {
 
 .people-content a {
   color: inherit;
-  font-size: 20px;
 }
 
 .pdf-link {
@@ -246,7 +244,6 @@ body {
 .contact-entry {
   float: left; /* Multiple per row */
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
   /* 4 contact entries per line: */
   width: 23%;
   margin: 5px;
@@ -364,5 +361,252 @@ body {
 
 .alumni .person-photo {
   width: 100px;
+}
+
+.paper-entry {
+  margin-bottom: 25px;
+}
+
+.disclaimer {
+  font-size: 15pt;
+}
+
+.containit, .contact-entry a, .person-link a {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+
+ul {
+  line-height: 2.0em;
+}
+
+.disclaimer {
+  color: gray;
+}
+
+@media(min-width: 1001px) {
+  .alumni-entry {
+    width: 20.8%;
+  }
+  .alumni .person-photo {
+    height: 100px;
+  }
+  body {
+    font-size: 24px;
+    line-height: 1.6em;
+  }
+  .person-name, .person-email, .person-position, .person-link a, .person-bio {
+    font-size: 0.80em;
+  }
+  .grad-student-entry {
+    width: 440px;
+    min-height: 600px;
+  }
+  .faculty-entry {
+    width: 440px;
+    min-height: 650px;
+  }
+  .alumni-entry {
+    min-height: 300px;
+  }
+  .alumni-entry .person-name { line-height: 1.5em; }
+  .alumni-entry a {
+    font-size: 12pt;
+  }
+  .project-descr {
+    line-height: 1.5em;
+  }
+  .projects-entry {
+    min-height: 220px;
+  }
+  .project-link { line-height: 1.2em; }
+  .job-title {
+    min-height: 140px;
+  }
+  .contact-names {
+    min-height: 180px;
+  }
+}
+
+@media(max-width: 1000px) {
+  body {
+    font-size: 26px;
+    line-height: 1.5em;
+  }
+  .content {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #navbar-links {
+    margin: 0 auto;
+    width: auto;
+  }
+  #navbar a {
+    font-size: 2.5vw;
+    text-decoration: underline;
+  }
+  #logo { display: none; }
+  .sticky + .content {
+    padding-top: 7vw;
+  }
+  .anchor {
+    top: -10vw;
+  }
+  .faculty-entry { width: 38%; }
+  .large-entry {
+    margin: 1%;
+    padding: 5%;
+    border-radius: 40px;
+  }
+  .person-photo {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 250px;
+    height: 250px;
+    border-radius: 179px;
+  }
+  .grad-student-entry {
+    width: 34vw;
+    min-height: 80vw;
+  }
+  .person-name, .person-email, .person-position, .person-link a, .person-bio {
+    font-size: 0.80em;
+  }
+  .small-entry .person-photo, .small-entry img {
+    width: 31vw;
+    height: 31vw;
+  }
+  .small-entry {
+    width: 35vw;
+    padding: 2vw;
+    margin: 2.5vw;
+    min-height: 48vw;
+  }
+  .project-descr {
+    line-height: 1.4em;
+  }
+  .project-link a { line-height: 1vw; }
+  .projects-entry {
+    min-height: 35vw;
+  }
+  h1 {
+    line-height: 1.5em;
+  }
+  .contact-name {
+    line-height: 1.1em;
+    padding: 1vw;
+  }
+  .contact-names {
+    min-height: 13vw;
+    font-size: 15pt;
+  }
+  .job-title {
+    font-size: 16pt;
+    min-height: 10vw;
+  }
+  .contact-entry a {
+    font-size: 0.8em;
+  }
+  .job-title {
+    min-height: 16vw;
+  }
+}
+
+@media(max-width: 650px) {
+  .disclaimer {
+    font-size: 3vw;
+  }
+  .small-entry {
+    width: 38vw;
+    padding: 2vw;
+    margin: 2.5vw;
+    min-height: 55vw;
+  }
+  .small-entry .person-photo, .small-entry img {
+    width: 31vw;
+    height: 31vw;
+  }
+  .content {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  body {
+    font-size: 4vw;
+  }
+  body p {
+    font-size: 4.7vw;
+  }
+  .people-content img {
+    width: 33vw;
+    height: 33vw;
+  }
+  .grad-student-entry img {
+    width: 23vw;
+    height: 23vw;
+  }
+  .grad-student-entry .person-photo {
+    width: 23vw;
+    height: 23vw;
+    border-radius: 10vw;
+  }
+  .grad-student-entry {
+    width: 38%;
+    min-height: 85vw;
+    margin: 1vw;
+  }
+  .person-photo {
+    width: 33vw;
+    height: 33vw;
+  }
+  .large-entry {
+    margin: 1vw;
+    padding: 4vw;
+  }
+  .people-content a {
+    font-size: 3vw;
+  }
+  .projects-entry {
+    min-height: 40vw;
+    width: 40vw;
+  }
+  .projects-entry-wide {
+    width: 80vw;
+  }
+  .project-descr {
+    font-size: 3.5vw;
+    padding-top: 3vw;
+  }
+  .project-link a {
+    font-size: 3.8vw;
+  }
+  .contact-names {
+    min-height: 15vw;
+    font-size: 3.2vw;
+  }
+  .job-title {
+    font-size: 3.5vw;
+    min-height: 10vw;
+  }
+  .contact-entry {
+    width: 43vw;
+  }
+  #bottom p {
+    font-size: 2.8vw;
+  }
 }
 
