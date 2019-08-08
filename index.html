@@ -1110,12 +1110,10 @@ function pageMoved() {
   }
 
   var pos = 0;
-  console.log("oops");
   for (i = 0; i < navbar_entries.length; i++) {
     var scrollTop = $(window).scrollTop();
     var elemOffset = $("#" + navbar_entries[i]).offset().top;
     var distance = elemOffset - scrollTop;
-    console.log(distance);
     if (distance - 30 < 0) { /* Magic number 30px seems to work, because of offset for anchors */
       $("#navbar-links").find("#" + navbar_entries[i] + "-link")
         .css("text-shadow", "3px 3px 3px black")
