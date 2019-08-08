@@ -87,7 +87,8 @@ body {
   text-decoration: none; /* no underlining */
 
   float: left;
-  padding: 1.2vw; /* 2.1vw; */
+  padding: 5px;
+  padding-bottom: 10px;
 
   font-size: 25px;
   font-weight: bold;
@@ -341,9 +342,14 @@ body {
   text-align: left;
 }
 
+.breakme {
+  clear: left;
+}
+
 .person-photo {
   margin: 20px;
   width: 250px; /* same as image width */
+  height: 250px;
   border-radius: 179px;
   border: 10px solid white;
 
@@ -457,6 +463,8 @@ ul {
     width: auto;
   }
   #navbar a {
+    padding: 1.2vw; /* 2.1vw; */
+    padding-bottom: 1.2vw;
     font-size: 2.5vw;
     text-decoration: underline;
   }
@@ -528,6 +536,10 @@ ul {
 }
 
 @media(max-width: 650px) {
+  #navbar a {
+    padding: 1.2vw; /* 2.1vw; */
+    padding-bottom: 1.2vw;
+  }
   .disclaimer {
     font-size: 3vw;
   }
